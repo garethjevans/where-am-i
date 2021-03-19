@@ -29,7 +29,7 @@ func isRunningInKubernetes() bool {
 		return true
 	}
 
-	// otherwise, lets check the existance of the kubernetes service host variable
+	// otherwise, lets check the existence of the kubernetes service host variable
 	if os.Getenv("KUBERNETES_SERVICE_HOST") != "" {
 		return true
 	}
