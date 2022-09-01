@@ -34,8 +34,6 @@ linters-settings:
   gocyclo:
     min-complexity: 30
   goimports:
-  golint:
-    min-confidence: 0
   gomnd:
     settings:
       mnd:
@@ -67,7 +65,6 @@ linters:
   disable-all: true
   enable:
     - asciicheck
-    - deadcode
     - depguard
     - dogsled
     - errcheck
@@ -78,24 +75,20 @@ linters:
     - godot
     - gofmt
     - goimports
-    - golint
     - goprintffuncname
     - gosec
     - gosimple
     - ineffassign
-    - interfacer
-    - maligned
     - misspell
     - nakedret
     - nolintlint
+    - revive
     - rowserrcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - whitespace
 #    - testpackage
   # don't enable:
